@@ -1,0 +1,64 @@
+<div class="Back" style="background-image: url(assets/Mobile.jpg);">
+    <div class="header">
+        <div class="inner-header flex">
+            <img routerLink="/Homepage" src="assets/tirupati.png" width="150" alt="">
+            <h1>TIRUPATI MOBILE SHOP</h1>
+        </div>
+        <br>
+
+        <div>
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                 viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(0,255,255,0.7)" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,0,255,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,0,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(0,0,0,0.1)" />
+                </g>
+            </svg>
+        </div>
+    </div>
+
+    
+    <br>
+<div style="display: grid; grid-template-columns: repeat(auto-fit,minmax(320px,1fr));">
+    <div class="component">
+        <nav >
+          <button class="yellow" routerLink="/Mobiles" >Buy Mobile</button>
+        </nav>
+        <p >Buy the latest and popular mobile phones from Tirupati Mobile Shop.</p>
+    </div>
+
+    <div class="component"  >
+        <i class="fas fa-mobile-alt"></i>
+        <nav>
+            <button class="skyblue" routerLink="/MobileRepair">Mobile Repairing</button>
+        </nav>
+        <p>Get your mobile devices repaired by our expert technicians.</p>
+    </div>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit,minmax(320px,1fr));">
+    <div class="component">
+        <nav>
+          <button class="yellow" routerLink="/Accessories">Buy Accessories</button>
+      </nav>
+        <p>Find the best mobile accessories at Tirupati Mobile Shop.</p>
+    </div>
+
+    <div class="component">
+        <nav>
+          <button class="skyblue" routerLink="/Stationary">Buy Stationary</button>
+      </nav>
+        <p>Buy the best quality stationary items from Tirupati Mobile Shop.</p>
+    </div>
+</div>
+   
+<app-form></app-form>
+    
+   
+
+

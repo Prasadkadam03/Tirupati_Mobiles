@@ -1,0 +1,39 @@
+<form [formGroup]="Form" style="justify-content: center; text-align: center;" (submit) = "send()">
+    <div class="form">
+        <div class="title">Welcome</div>
+        <div class="subtitle">Feedback Form</div>
+        
+        <div class="input-container ic1">
+            <div class="Form-Group">
+                <input [class.is-invalid]="Form.get('UserName')?.invalid" type="text" class="form-control" formControlName="UserName" placeholder="Enter Your Full Name">
+                <div class="cut"></div>
+                <label for="UserName" class="placeholder">Username</label>
+                <div *ngIf="Form.get('UserName')?.invalid && Form.get('UserName')?.touched" class="error-message" style="color: red;">Please enter a valid username (min length: 5).</div>
+        </div>
+            
+        </div>
+        <div class="input-container ic2">
+            <div class="Form-Group">
+                <input [class.is-invalid]="Form.get('Email')?.invalid" type="email" class="form-control" formControlName="Email" placeholder="Enter Your Email">
+                <div class="cut cut-short"></div>
+                <label for="Email" class="placeholder">Email</label>
+                <div *ngIf="Form.get('Email')?.invalid && Form.get('Email')?.touched" class="error-message"style="color: red;">Please enter a valid email address.</div>
+            </div>
+        </div>
+        <div class="input-container ic2">
+            <div class="Form-Group">
+                <input [class.is-invalid]="Form.get('Feedback')?.invalid" type="text" class="form-control" formControlName="Feedback" placeholder="Feedback / Suggest imporvement">
+                <div class="cut cut-short"></div>
+                <label for="Feedback" class="placeholder">Feedback</label>
+                <div *ngIf="Form.get('Feedback')?.invalid && Form.get('Feedback')?.touched" class="error-message" style="color: red;">Feedback is required.</div>
+            </div>
+        </div>
+        
+        <div>
+            <button type="submit" class="submit" >Submit</button>
+        </div>
+      
+
+    </div>
+</form>
+

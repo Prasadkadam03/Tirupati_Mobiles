@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    background-size: cover;
+    background-position: center;
+    font-weight: bolder;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.2); /* Adjusted the background color */
+    backdrop-filter: blur(5px); /* Adjusted the blur value */
+    margin: auto;
+}
+
+.content {
+    padding: 40px;
+    max-width: 800px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.6); /* Adjusted the background color */
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #3e7fca;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+/* WhatsApp Button Styles */
+.whatsapp-button {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 30px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.whatsapp-button img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+/* Hover and Animation for WhatsApp Button */
+.whatsapp-button:hover {
+    background-color: #87CEEB;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.whatsapp-button:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(220, 199, 131, 0.415);
+    z-index: -1;
+    border-radius: 5px;
+    animation: pulse 1s infinite;
+}
